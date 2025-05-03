@@ -1,9 +1,14 @@
 import { useState } from "react";
 
 export default function Contact() {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
+  const API_BASE = import.meta.env.VITE_API_BASE_URL;
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
@@ -14,7 +19,7 @@ export default function Contact() {
     setIsSubmitting(true);
 
     try {
-      const res = await fetch("http://localhost:5000/contact", {
+      const res = await fetch(`${API_BASE}/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -40,7 +45,8 @@ export default function Contact() {
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-pink-700 mb-4">Get In Touch</h2>
         <p className="text-green-700 mb-10 text-lg">
-          We'd love to hear from you! Please fill out the form and we'll get back to you as soon as possible.
+          We'd love to hear from you! Please fill out the form and we'll get
+          back to you as soon as possible.
         </p>
 
         <form
@@ -48,7 +54,10 @@ export default function Contact() {
           className="bg-white p-8 rounded-xl shadow-lg space-y-6 text-left"
         >
           <div>
-            <label className="block mb-2 text-pink-700 font-semibold" htmlFor="name">
+            <label
+              className="block mb-2 text-pink-700 font-semibold"
+              htmlFor="name"
+            >
               Your Name
             </label>
             <input
@@ -63,7 +72,10 @@ export default function Contact() {
           </div>
 
           <div>
-            <label className="block mb-2 text-pink-700 font-semibold" htmlFor="email">
+            <label
+              className="block mb-2 text-pink-700 font-semibold"
+              htmlFor="email"
+            >
               Your Email
             </label>
             <input
@@ -78,7 +90,10 @@ export default function Contact() {
           </div>
 
           <div>
-            <label className="block mb-2 text-pink-700 font-semibold" htmlFor="message">
+            <label
+              className="block mb-2 text-pink-700 font-semibold"
+              htmlFor="message"
+            >
               Your Message
             </label>
             <textarea
