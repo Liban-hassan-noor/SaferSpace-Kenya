@@ -2,26 +2,29 @@
 
 import { motion } from "framer-motion";
 import React from "react";
+import liban from "../assets/liban.jpg";
+import zakiya from "../assets/zakiya.jpg";
+import ebenezer from "../assets/ebenezer.jpg"; // Correctly import the image from the src folder
 
 const teamMembers = [
   {
     name: "Liban Hassan",
     role: "Founder & fullstack engineer",
-    image: "src/assets/liban.jpg",
+    image: liban,
     description:
       "Liban founded SaferSpace to create a trusted platform where girls and women in North Eastern Kenya can find emotional support, safety, and access to critical resources.",
   },
   {
     name: "Zakiya Abass",
-    role: "Software Engineer",
-    image: "src/assets/zakiya.jpg",
+    role: "Software Engineer & Co-Founder",
+    image: zakiya,
     description:
       "Zakiya leads the development of SaferSpace’s technology, building user-friendly and secure systems that ensure survivors can access help anytime, anywhere.",
   },
   {
     name: "Dr Ebenezer",
-    role: " Health Lead & Survivor Support Nurse",
-    image: "src/assets/ebenezer.jpg",
+    role: " Health Lead & Co-Founder",
+    image: ebenezer,
     description:
       "Dr. Ebenezer brings medical expertise to SaferSpace, offering frontline care and health education while connecting survivors to professional services in their communities.",
   },

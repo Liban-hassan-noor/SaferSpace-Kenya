@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import photo2 from "../assets/photo2.jpg"; // Correctly import the image from the src folder
 
 export default function JoinUs() {
   return (
@@ -13,7 +14,7 @@ export default function JoinUs() {
           className="w-full md:w-1/2 mb-8 md:mb-0"
         >
           <img
-            src="src/assets/photo2.jpg"
+            src={photo2}
             alt="Support Image"
             className="w-full h-auto object-cover rounded-lg"
           />

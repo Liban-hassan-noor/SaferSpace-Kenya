@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-
+import logo from "../assets/logo.jpg"; // Adjust the path as necessary
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,7 +15,7 @@ export default function Navbar() {
         <div className="w-16 h-16 overflow-hidden rounded-full">
           <Link to="/">
             <img
-              src="../src/assets/logo.jpg"
+              src={logo}
               alt="SaferSpace Logo"
               className="w-full h-full object-cover object-center scale-150"
             />
