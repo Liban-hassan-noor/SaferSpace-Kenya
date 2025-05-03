@@ -8,7 +8,10 @@ export default function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
-  const API_BASE = import.meta.env.VITE_API_BASE_URL;
+
+  // Use the correct variable here
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL; // Updated to use the correct variable
+  const endpoint = `${API_BASE_URL}/contact`; // Use the API base URL with `/contact` endpoint
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
@@ -19,9 +22,9 @@ export default function Contact() {
     setIsSubmitting(true);
 
     try {
-      console.log("API endpoint:", `${API_BASE}/contact`);
+      console.log("API endpoint:", endpoint); // Log the correct endpoint
 
-      const res = await fetch(`${API_BASE}/contact`, {
+      const res = await fetch(endpoint, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
