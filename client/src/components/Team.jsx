@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import React from "react";
-import Liban from "../assets/liban.jpg";
+import Liban from "../assets/Liban.jpg";
 import zakiya from "../assets/zakiya.jpg";
 import ebenezer from "../assets/ebenezer.jpg"; // Correctly import the image from the src folder
 
