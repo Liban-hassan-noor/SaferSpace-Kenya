@@ -19,6 +19,8 @@ export default function Contact() {
     setIsSubmitting(true);
 
     try {
+      console.log("API endpoint:", `${API_BASE}/contact`);
+
       const res = await fetch(`${API_BASE}/contact`, {
         method: "POST",
         headers: {
