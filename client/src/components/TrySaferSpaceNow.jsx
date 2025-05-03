@@ -8,17 +8,15 @@ const TrySaferSpaceNow = () => {
         Step into a Safer Space
       </h2>
       <p className="text-lg text-gray-700 mb-6">
-        Ready to talk, share, or get help? Access the full SaferSpace experience
-        now.
+        Ready to talk, share, or get help? The full SaferSpace experience is
+        launching soon.
       </p>
-      <a
-        href="https://your-safer-space-app-link.com" // replace with your actual app URL
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition"
+      <button
+        disabled
+        className="inline-block bg-gray-400 text-white px-6 py-3 rounded-full cursor-not-allowed"
       >
-        Open SaferSpace Web App
-      </a>
+        Coming Soon
+      </button>
     </section>
   );
 };
