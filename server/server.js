@@ -6,6 +6,18 @@ import { Resend } from "resend";
 import Contact from "./models/contact.js";
 
 dotenv.config(); // Load environment variables from .env file
+// This allows only your frontend to talk to your backend
+//const app = express();
+const app = express();
+app.use(cors());
+app.use(
+  cors({
+    origin: "safer-space-kenya.vercel.app",
+
+    methods: ["GET", "POST"],
+    credentials: true,
+  })
+);
 
 // MongoDB connection
 const mongoURI = process.env.MONGO_URI;
@@ -20,9 +32,6 @@ mongoose
 // Resend API setup
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const app = express();
-
-app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
