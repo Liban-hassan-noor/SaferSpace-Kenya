@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import actual from "../assets/actual.jpg";  
+import actual from "../assets/actual.jpg";
 
 const About = () => {
   return (
@@ -24,9 +24,8 @@ const About = () => {
         className="mb-8"
       >
         <img
-          src={actual.jpg}
-          srcset="src/assets/actual.jpg 1920w, src/assets/actual@2x.jpg 3840w"
-          alt="Girls from Northern Kenya"
+          src={actual}
+          alt="Girls from North eastern Kenya"
           className="rounded-lg shadow-lg w-full object-cover"
           loading="lazy"
         />
