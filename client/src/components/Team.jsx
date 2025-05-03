@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import React from "react";
-import liban from "../assets/liban.jpg";
+import Liban from "../assets/liban.jpg";
 import zakiya from "../assets/zakiya.jpg";
 import ebenezer from "../assets/ebenezer.jpg"; // Correctly import the image from the src folder
 
@@ -10,7 +10,7 @@ const teamMembers = [
   {
     name: "Liban Hassan",
     role: "Founder & fullstack engineer",
-    image: liban,
+    image: Liban,
     description:
       "Liban founded SaferSpace to create a trusted platform where girls and women in North Eastern Kenya can find emotional support, safety, and access to critical resources.",
   },
