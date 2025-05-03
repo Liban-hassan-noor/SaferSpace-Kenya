@@ -9,11 +9,23 @@ dotenv.config(); // Load environment variables from .env file
 // This allows only your frontend to talk to your backend
 //const app = express();
 const app = express();
-app.use(cors());
+
+const allowedOrigins = [
+  "http://localhost:5173", // local dev
+  "https://safer-space-kenya.vercel.app", // deployed frontend
+];
+
 app.use(
   cors({
-    origin: "safer-space-kenya.vercel.app",
-
+    origin: function (origin, callback) {
+      // Allow requests with no origin (like mobile apps or curl)
+      if (!origin) return callback(null, true);
+      if (allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      } else {
+        return callback(new Error("Not allowed by CORS"));
+      }
+    },
     methods: ["GET", "POST"],
     credentials: true,
   })
