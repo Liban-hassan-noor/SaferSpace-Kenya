@@ -53,8 +53,8 @@ app.post("/contact", async (req, res) => {
 
     // Step 2: Send email using Resend API
     await resend.emails.send({
-      from: " onboarding@resend.dev", // Sender email
-      to: "libanhassannur23@gmail.com", // Receiver email (your email)
+      from: "onboarding@resend.dev", // Sender email
+      to: "saferspace.kenya@gmail.com", // Receiver email (your email)
       subject: `New message from ${name}`,
       html: `
         <h2>New Contact Message</h2>
