@@ -10,8 +10,10 @@ export default function Contact() {
   const [success, setSuccess] = useState(false);
 
   // Use the correct variable here
-  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL; // Updated to use the correct variable
-  const endpoint = `${API_BASE_URL}/contact`; // Use the API base URL with `/contact` endpoint
+  //const API_BASE_URL = import.meta.env.VITE_API_BASE_URL; // Updated to use the correct variable
+  const VITE_API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
+  const endpoint = `${VITE_API_BASE_URL}/contact`; // Use the API base URL with `/contact` endpoint
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });

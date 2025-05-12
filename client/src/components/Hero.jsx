@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import photo3 from "../assets/photo3.jpg";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -36,12 +37,12 @@ export default function Hero() {
             heal and grow.
           </p>
 
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="mt-6 inline-block px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white rounded-full text-lg"
           >
             Talk to Us
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>
