@@ -40,7 +40,7 @@ const About = () => {
         className="text-lg text-gray-700 mb-6"
       >
         SaferSpace is a dedicated platform that empowers girls and women in
-        North Eastern Kenya, offering a safe and supportive environment where
+       Kenya, offering a safe and supportive environment where
         they can find the help they need. Through our online platform and
         WhatsApp chatbot, we connect survivors to essential mental health
         support, peer guidance, and free health services. Our mission is to

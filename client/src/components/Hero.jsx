@@ -29,8 +29,7 @@ export default function Hero() {
             "A safe space to speak, heal, and grow — together."
           </h2>
           <p className="text-lg mt-4 text-green-500">
-            SaferSpace is a digital platform for girls and women in Northern
-            Eastern Kenya, offering healing, community support, and access to
+            SaferSpace is a digital platform for girls and women in Kenya, offering healing, community support, and access to
             care. Through our web app and WhatsApp chatbot, users can connect
             with professionals, find nearby safe clinics, and get real advice
             from survivors. This is more than a chatbot — it's a safe space to

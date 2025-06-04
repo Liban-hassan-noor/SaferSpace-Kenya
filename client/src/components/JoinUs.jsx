@@ -33,7 +33,7 @@ export default function JoinUs() {
           </h2>
           <p className="text-green-800 text-lg mb-8">
             Every girl deserves safety, support, and the chance to heal.
-            Together, we can build a future where survivors in North Eastern
+            Together, we can build a future where survivors in 
             Kenya are heard, helped, and empowered.
           </p>
           <motion.a

@@ -7,15 +7,20 @@ const TrySaferSpaceNow = () => {
       <h2 className="text-3xl font-bold text-purple-700 mb-4">
         Step into a Safer Space
       </h2>
-      <p className="text-lg text-gray-700 mb-6">
-        Ready to talk, share, or get help? The full SaferSpace experience is
-        launching soon.
+      <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+        Whether you're here to get support or try out the full SaferSpace
+        platform, you're in the right place.
       </p>
-      <button
-        disabled
-        className="inline-block bg-gray-400 text-white px-6 py-3 rounded-full cursor-not-allowed"
-      >
-        Coming Soon
+
+      <button>
+        <a
+          href="https://saferspace-5852d.web.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-full shadow-md transition duration-300"
+        >
+          Visit Full Platform 
+        </a>
       </button>
     </section>
   );
