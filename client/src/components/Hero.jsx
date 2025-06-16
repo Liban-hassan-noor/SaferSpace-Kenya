@@ -6,44 +6,50 @@ export default function Hero() {
   return (
     <section
       id="mission"
-      className="h-screen bg-cover bg-center text-white flex items-center relative overflow-hidden"
+      className="h-screen bg-cover bg-center relative flex items-center justify-center overflow-hidden"
       style={{ backgroundImage: `url(${photo3})` }}
     >
-      {/* Background zoom animation */}
+      {/* Zooming Background Animation */}
       <motion.div
         initial={{ scale: 1 }}
         animate={{ scale: 1.05 }}
-        transition={{ duration: 20, repeat: Infinity, repeatType: "reverse" }}
-        className="absolute inset-0 bg-opacity-30"
+        transition={{
+          duration: 25,
+          repeat: Infinity,
+          repeatType: "reverse",
+          ease: "easeInOut",
+        }}
+        className="absolute inset-0 bg-opacity-40"
       />
 
-      {/* Content with frosted glass and fade-in */}
-      <div className="relative z-10 w-full flex flex-col justify-center items-center px-6 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="bg-white bg-opacity-20 backdrop-blur-md p-8 rounded-xl max-w-2xl"
-        >
-          <h2 className="text-4xl md:text-5xl font-bold text-pink-400">
-            "A safe space to speak, heal, and grow — together."
-          </h2>
-          <p className="text-lg mt-4 text-green-500">
-            SaferSpace is a digital platform for girls and women in Kenya, offering healing, community support, and access to
-            care. Through our web app and WhatsApp chatbot, users can connect
-            with professionals, find nearby safe clinics, and get real advice
-            from survivors. This is more than a chatbot — it's a safe space to
-            heal and grow.
-          </p>
+      {/* Frosted Glass Content */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.2 }}
+        className="relative z-10 bg-white/10 backdrop-blur-xl text-white px-6 py-10 md:p-12 rounded-2xl max-w-3xl text-center shadow-xl border border-white/20"
+      >
+        <h1 className="text-3xl md:text-5xl font-bold text-pink-300 leading-tight">
+          "A Safe Space to Speak, Heal, and Grow — Together."
+        </h1>
 
-          <Link
-            to="/contact"
-            className="mt-6 inline-block px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white rounded-full text-lg"
-          >
-            Talk to Us
-          </Link>
-        </motion.div>
-      </div>
+        <p className="mt-6 text-md md:text-lg text-green-100 leading-relaxed">
+          SaferSpace is a healing-centered digital platform for girls and women in Kenya. 
+          We provide access to safe clinics, mental health support, and a caring community — 
+          while also connecting girls to real{" "}
+          <span className="text-pink-200 font-semibold">
+            opportunities for education, empowerment, and sponsorship
+          </span>{" "}
+          through our trusted partners.
+        </p>
+
+        <Link
+          to="/contact"
+          className="mt-8 inline-block px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white text-lg rounded-full shadow-md transition duration-300 hover:scale-105"
+        >
+          Talk to Us
+        </Link>
+      </motion.div>
     </section>
   );
 }

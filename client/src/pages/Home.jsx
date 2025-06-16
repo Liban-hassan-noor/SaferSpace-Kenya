@@ -9,6 +9,7 @@ import Challenges from "../components/Challenges";
 
 import React from "react";
 import TrySaferSpaceNow from "../components/TrySaferSpaceNow";
+import ApproachValidation from "../components/ApproachValidation";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Hero />
       <Challenges />
       <HowItWorks />
+      <ApproachValidation />
       <TrySaferSpaceNow />
       <JoinUs />
       <Footer />
