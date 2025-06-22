@@ -12,7 +12,7 @@ export default function HowItWorks() {
      {
       title: "Access Real Opportunities",
       description:
-        "We connect girls and survivors to life-changing opportunities — from tech and entrepreneurship programs to scholarships, safe spaces, and leadership networks — in partnership with trusted organizations.",
+        "We connect girls and survivors to life-changing opportunities , from tech and entrepreneurship programs to scholarships, safe spaces, and leadership networks , in partnership with trusted organizations.",
       icon: <Sparkles className="w-8 h-8 text-green-600 mb-4" />,
     },
     {
@@ -25,7 +25,7 @@ export default function HowItWorks() {
     {
       title: "Talk to a Caring Professional",
       description:
-        "Reach out to counselors and health experts on WhatsApp — get confidential support whenever you're ready.",
+        "Reach out to counselors and health experts on WhatsApp , get confidential support whenever you're ready.",
       icon: <MessageCircleHeart className="w-8 h-8 text-green-600 mb-4" />,
     },
    
