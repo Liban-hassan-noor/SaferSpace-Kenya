@@ -44,9 +44,9 @@ const About = () => {
   SaferSpace is a trauma-informed digital platform built to support girls
   and women in Kenya facing gender-based violence, early marriage, and
   stigma. Through our secure platform, we offer access to mental health
-  support, peer connection, and nearby healthcare — all in one safe,
+  support, peer connection, and nearby healthcare , all in one safe,
   private space. Beyond immediate care, we connect survivors to long-term
-  opportunities — from returning to school and joining tech programs, to
+  opportunities , from returning to school and joining tech programs, to
   finding mentorship and empowerment communities. Our goal is simple: to
   help every girl feel seen, supported, and free.
 </motion.p>
@@ -77,7 +77,7 @@ const About = () => {
         quietly, with no one safe to talk to.
         <br />
         <br />
-        SaferSpace was created from those memories — and the belief that healing
+        SaferSpace was created from those memories , and the belief that healing
         begins with being heard. We combined local lived experience with
         technology to offer real support: peer-led chat spaces, trauma-informed
         tools, and a growing network of counselors, clinics, and allies. At its
@@ -115,7 +115,7 @@ const About = () => {
     <span>
       <b>Empowerment Opportunities:</b> We connect girls to school
       reentry programs, tech and coding classes, mentorship, and
-      leadership networks — to help them rebuild their future.
+      leadership networks , to help them rebuild their future.
     </span>
   </li>
         <li className="flex gap-3 items-start">
@@ -129,7 +129,7 @@ const About = () => {
           <HeartHandshake className="text-pink-500 mt-1 w-5 h-5" />
           <span>
             <b>Mental Health Support:</b> Chat with trained professionals on
-            WhatsApp — whenever you're ready.
+            WhatsApp , whenever you're ready.
           </span>
         </li>
       </motion.ul>

@@ -30,12 +30,12 @@ export default function Hero() {
         className="relative z-10 bg-white/10 backdrop-blur-xl text-white px-6 py-10 md:p-12 rounded-2xl max-w-3xl text-center shadow-xl border border-white/20"
       >
         <h1 className="text-3xl md:text-5xl font-bold text-pink-300 leading-tight">
-          "A Safe Space to Speak, Heal, and Grow — Together."
+          "A Safe Space to Speak, Heal, and Grow , Together."
         </h1>
 
         <p className="mt-6 text-md md:text-lg text-green-100 leading-relaxed">
           SaferSpace is a healing-centered digital platform for girls and women in Kenya. 
-          We provide access to safe clinics, mental health support, and a caring community — 
+          We provide access to safe clinics, mental health support, and a caring community , 
           while also connecting girls to real{" "}
           <span className="text-pink-200 font-semibold">
             opportunities for education, empowerment, and sponsorship
